@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bbg"
+    android:gravity="center" >
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="204dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lluserreg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_userreg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text=" 汕大邮箱"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_user_id_reg"
+                    android:layout_width="146dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="60dp"
+                    android:inputType="text"
+                    android:textSize="18sp"
+                    android:textStyle="normal"
+                    android:typeface="normal">
+
+                    <requestFocus />
+                </EditText>
+
+                <TextView
+                    android:id="@+id/tv_suffix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:text="@stu.edu.cn"
+                    android:textColor="#fff" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llpwdreg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_pwdreg"
+                    android:layout_width="71dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="密码"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_user_psw"
+                    android:layout_width="153dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="60dp"
+                    android:inputType="textPassword"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llpwdreg2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_pwdreg2"
+                    android:layout_width="107dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="确认密码"
+                    android:textColor="#fff"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_user_psw2"
+                    android:layout_width="158dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dp"
+                    android:inputType="textPassword"
+                    android:textSize="18sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_sub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/btn"
+                    android:text="提交"
+                    android:textColor="#fff" />
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/btn"
+                    android:text="取消"
+                    android:textColor="#fff" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/psw_image_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="99dp"
+        android:src="@drawable/pswopen" />
+
+</RelativeLayout>
